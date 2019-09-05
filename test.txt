@@ -4,7 +4,7 @@
     </head> 
     <body>
         <ul>
-            <li>Hello Git!</li>
+            <li>fuck github</li>
         </ul>
     </body>
 </html>
