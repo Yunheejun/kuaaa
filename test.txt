@@ -1,10 +1,1 @@
-<html>
-    <head>
-        <title>Git</title>
-    </head> 
-    <body>
-        <ul>
-            <li>fuckff dfasdjklfhubff</li>
-        </ul>
-    </body>
-</html>
+canuse korea
