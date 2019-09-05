@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sanchez:400,400i&display=swap");
+
+.modal {
+        text-align: center;
+}
+ 
+@media screen and (min-width: 768px) { 
+        .modal:before {
+                display: inline-block;
+                vertical-align: middle;
+                content: " ";
+                height: 100%;
+        }
+}
+ 
+.modal-dialog {
+        display: inline-block;
+        vertical-align: middle;
+}
+
+.btn:hover {
+    color: #697992;
+    text-decoration: none;
+}
+
+.btn:focus,
+.btn.focus {
+    outline: 0;
+    box-shadow: 0 0.125rem 0.25rem rgba(42, 53, 79, 0.07);
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: 0.65;
+    box-shadow: none;
+}
+
+.btn:not(:disabled):not(.disabled):active,
+.btn:not(:disabled):not(.disabled).active {
+    box-shadow: none;
+}
+
+.btn:not(:disabled):not(.disabled):active:focus,
+.btn:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0.125rem 0.25rem rgba(42, 53, 79, 0.07);
+}
+
+a.btn.disabled,
+fieldset:disabled a.btn {
+    pointer-events: none;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #274991;
+    border-color: #274991;
+    box-shadow: 0 0.125rem 0.25rem rgba(42, 53, 79, 0.07);
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #113c63;
+    border-color: #0f3559;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0.125rem 0.25rem rgba(42, 53, 79, 0.07), 0 0 0 0.0625rem rgba(58, 105, 150, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #ffffff;
+    background-color: #274991;
+    border-color: #274991;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #ffffff;
+    background-color: #0f3559;
+    border-color: #0e2f4e;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.0625rem rgba(58, 105, 150, 0.5);
+}
+
+
+.animate-up-2,
+.animate-right-2,
+.animate-down-2,
+.animate-left-2 {
+    transition: all 0.2s ease;
+}
+
+.animate-up-2:hover,
+.animate-hover:hover .animate-up-2 {
+    transform: translate(0, -2px);
+}
+
+.animate-right-2:hover,
+.animate-hover:hover .animate-right-2 {
+    transform: translate(2px, 0);
+}
+
+.animate-down-2:hover,
+.animate-hover:hover .animate-down-2 {
+    transform: translate(0, 2px);
+}
+
+.animate-left-2:hover,
+.animate-hover:hover .animate-left-2 {
+    transform: translate(-2px, 0);
+}
+
+.animate-up-3,
+.animate-right-3,
+.animate-down-3,
+.animate-left-3 {
+    transition: all 0.2s ease;
+}
+
+.animate-up-3:hover,
+.animate-hover:hover .animate-up-3 {
+    transform: translate(0, -3px);
+}
+
+    .mr-200 {
+        margin-right: 200px !important;
+    }
+    .mb-200 {
+        margin-bottom: 200px !important;
+    }
+
+   .mr-250 {
+        margin-right: 250px !important;
+    }
+    .mb-250 {
+        margin-bottom: 250px !important;
+    }
+
+.btn.btn-pill {
+    border-radius: 2rem;
+}
+
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #274991;
+    border-color: #274991;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #274991;
+    border-color: #274991;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0.125rem 0.25rem rgba(42, 53, 79, 0.07), 0 0 0 0.0625rem rgba(23, 79, 132, 0.5);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #ffffff;
+    background-color: #274991;
+    border-color: #274991;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #ffffff;
+    background-color: #274991;
+    border-color: #274991;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
