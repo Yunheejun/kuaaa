@@ -14,6 +14,8 @@
     <link rel="icon" href="http://bootstrapk.com/favicon.ico">
 
     <title>Hubstel</title>
+    
+    
 	
     <!-- Bootstrap core CSS -->
     <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
