@@ -84,7 +84,10 @@ button {
 	vertical-align: center;
 }
 </style>
-
+<meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id"
+	content="878418668504-o095oma848mo979d6bm2md3eoopobrtn.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="/pp/resources/js/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 	var address = "";
@@ -109,6 +112,38 @@ button {
 		$('#signup').css('display', 'none');
 		$('#findPassword').css('display', 'none');
 		$('#login').css('display', '');
+	}
+
+	function signOut() {
+		var auth2 = gapi.auth2.getAuthInstance();
+		auth2.signOut().then(function() {
+			console.log('user signed out')
+		})
+		auth2.disconnect();
+		$.ajax({
+			url : "logout",
+			data : {
+				userid : "userid"
+			},
+			success : function() {
+				alert("로그아웃 완료")
+			}
+		})
+	}
+	function onSignIn(googleUser) {
+		// Useful data for your client-side scripts:
+		var profile = googleUser.getBasicProfile();
+		console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+		console.log('Full Name: ' + profile.getName());
+		console.log('Given Name: ' + profile.getGivenName());
+		console.log('Family Name: ' + profile.getFamilyName());
+		console.log("Image URL: " + profile.getImageUrl());
+		console.log("Email: " + profile.getEmail());
+		var aa = document.getElementById("text").value;
+		aa = profile.getId();
+		// The ID token you need to pass to your backend:
+		var id_token = googleUser.getAuthResponse().id_token;
+		console.log("ID Token: " + id_token);
 	}
 </script>
 
@@ -170,12 +205,13 @@ button {
 									<div class="btn-wrapper my-4"
 										style="display: inline-flex; width: 300px;">
 										<div style="width: 100%; margin: auto;">
-											<span class=" loginApi" style="margin-right: 2.5px;"><a
+											<span class=" loginApi" data-onsuccess="onSignIn"
+												data-theme="dark" style="margin-right: 2.5px;"><a
 												href="#" style="width: 30%; height: 33px;"
 												class="btn btn-sm  mb-1 mb-sm-0"> <img
 													src="https://static.tacdn.com/img2/google/G_color_40x40.png"
 													style="margin-bottom: 2px; width: 15px; text-align: left; margin-right: 10px;"
-													alt=""> Google
+													alt=""> Googlegg
 											</a> </span> <span class=" loginApi" style="margin-left: 2.5px;">
 												<a href="#"
 												style="width: 30%; height: 33px; margin-right: 12px;"
