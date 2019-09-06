@@ -117,6 +117,9 @@ button {
 		};
 		gapi.auth.signIn(myParams);
 	}
+	function name() {
+
+	}
 </script>
 
 <body>
