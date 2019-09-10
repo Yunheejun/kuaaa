@@ -139,11 +139,11 @@ button {
 		console.log('Family Name: ' + profile.getFamilyName());
 		console.log("Image URL: " + profile.getImageUrl());
 		console.log("Email: " + profile.getEmail());
-		var aa = document.getElementById("text").value;
-		aa = profile.getId();
-		// The ID token you need to pass to your backend:
-		var id_token = googleUser.getAuthResponse().id_token;
-		console.log("ID Token: " + id_token);
+		alert(profile.getEmail())
+
+	}
+	function googlelogin() {
+
 	}
 </script>
 
@@ -173,6 +173,10 @@ button {
 			<!--/.nav-collapse -->
 		</div>
 	</nav>
+
+
+
+
 
 	<div class="container">
 
@@ -204,15 +208,17 @@ button {
 									</div>
 									<div class="btn-wrapper my-4"
 										style="display: inline-flex; width: 300px;">
-										<div style="width: 100%; margin: auto;">
-											<span class=" loginApi" data-onsuccess="onSignIn"
-												data-theme="dark" style="margin-right: 2.5px;"><a
-												href="#" style="width: 30%; height: 33px;"
+										<div style="width: 100%; margin: auto;"
+											data-onsuccess="onSignIn">
+
+											<span class=" loginApi" style="margin-right: 2.5px;">
+												<a style="width: 30%; height: 33px;"
 												class="btn btn-sm  mb-1 mb-sm-0"> <img
 													src="https://static.tacdn.com/img2/google/G_color_40x40.png"
 													style="margin-bottom: 2px; width: 15px; text-align: left; margin-right: 10px;"
 													alt=""> Googlegg
-											</a> </span> <span class=" loginApi" style="margin-left: 2.5px;">
+											</a>
+											</span> <span class=" loginApi" style="margin-left: 2.5px;">
 												<a href="#"
 												style="width: 30%; height: 33px; margin-right: 12px;"
 												class="btn btn-sm  mb-1 mb-sm-0"> <img
@@ -228,7 +234,7 @@ button {
 									<div
 										style="width: 300px; margin: auto; vertical-align: center; padding-top: 20px; padding-bottom: 10px;">
 										<span> <input type="email" style="margin-bottom: 10px;"
-											class="form-control" id="input-email"
+											class="form-control" name="input-email"
 											placeholder="Enter email" required> <input
 											class="form-control" placeholder="Password" type="password"
 											required>
@@ -267,7 +273,7 @@ button {
 									<div
 										style="width: 300px; margin: auto; padding-top: 20px; padding-bottom: 10px;">
 										<span> <input type="email" style="margin-bottom: 10px;"
-											class="form-control" id="input-email"
+											class="form-control" name="input-email"
 											placeholder="Enter email" required> <input
 											class="form-control" placeholder="Password" type="password"
 											required>
@@ -307,7 +313,7 @@ button {
 									<div
 										style="width: 300px; margin: auto; vertical-align: center; padding-top: 20px;">
 										<span> <input type="email" style="margin-bottom: 10px;"
-											class="form-control" id="input-email"
+											class="form-control" name="input-email"
 											placeholder="Enter email" required>
 										</span>
 
